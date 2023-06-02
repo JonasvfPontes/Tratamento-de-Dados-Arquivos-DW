@@ -1,5 +1,0 @@
-10000001404CREDITO BANCARIO                                  Outros                                            0
-10000001412FINANCIAMENTO TERCEIROS                           Outros                                            0
-10000001430FINANCIAMENTO                                     Financiamento - Controle Externo                  0
-10000002704VEICULO USADO                                     Outros                                            0
-10000002767CRÉDITO FUTURO                                    Outros                                            0
