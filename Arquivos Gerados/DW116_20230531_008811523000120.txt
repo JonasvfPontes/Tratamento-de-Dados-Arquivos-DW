@@ -1,0 +1,6 @@
+12   Venda de Servicos                                 Saida     
+13   Venda de Servicos Garantia                        Saida     
+14   Venda De Veículos                                 Saida     
+17   Devolução De Venda                                Entrada   
+19   Venda De Veículos Usados                          Saida     
+19999Venda Direta de Veiculo                           Saida     

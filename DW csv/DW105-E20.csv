@@ -1,0 +1,11 @@
+11  Venda de Balcao                                   S
+12  Venda de Servicos                                 S
+13  Venda de Servicos Garantia                        S
+15  Entrada de Pecas                                  E
+17  Devolução De Venda                                E
+18  Devolução De Compra                               S
+116 Transferência de Itens-Entrada                    E
+117 Transferência De Ítens (Saída)                    S
+119 Telepeças                                         S
+126 Venda De Pneus                                    S
+129 Venda Entre Empresas do Grupo                     S

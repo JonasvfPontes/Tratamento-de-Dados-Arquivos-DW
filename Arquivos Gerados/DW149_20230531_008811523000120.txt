@@ -1,0 +1,5 @@
+11              Show room (Fluxo de loja) Passivo                 1
+12              Telefone (ativo/passivo)                          1
+13              Email (Passivo)                                   1
+14              Externo ¿ Vendedor externo (Ativo)                1
+15              Indefinido ¿ Vai escolher na abertura do Evento   1

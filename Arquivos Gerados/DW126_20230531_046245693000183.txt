@@ -1,0 +1,8 @@
+1D1   DEPT VEIC. NOVOS                                  0     
+1D2   DEPT VEIC. USADOS                                 0     
+1D9   ACESSORIOS PARA VENDAS                            0     
+1RE   REVISAO DE ENTREGA                                0     
+1V1   CLIENTE                                           0     
+1V2   GARANTIA                                          0     
+1V3   OUTRAS CONCESSIONARIAS                            0     
+1V9   ACESSORIOS                                        0     

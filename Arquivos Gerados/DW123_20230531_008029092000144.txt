@@ -1,0 +1,168 @@
+103             REQUISICAO DE PECAS (MECANICA)                    00000000000000005002      
+10602243        TROCA DE OLEO                                     0000000000000001000GRL    
+10610653        REVISAO DE ENTREGA                                00000000000000006002      
+11              REQUISICAO                                        00000000000000000104      
+11.11           REQUISIÇÃO                                        00000000000000000102      
+11040390        Substituição do pára-sol                          00000000000000002002      
+11040410        Substituição do suporte do para-sol               00000000000000010002      
+11041280        Substituição do painel de acabamento da coluna C  00000000000000010002      
+11042980        Substituição do painel de acabamento da porta late00000000000000002002      
+11046510        Substituição do tampão do porta malas             00000000000000010002      
+11410280        Substituição das travas primária e secundária do c00000000000000010002      
+11416740        Substituição da guarnição de vedação da porta late00000000000000010002      
+11421020        Substituição do defletor de ar do para-choque dian00000000000000010002      
+11441164        Pintura/envernizamento completo do capô           00000000000000010002      
+11441364        Pintura/envernizamento completo do para-lama diant00000000000000010002      
+11441544        Pintura parcial/envernizamento do painel do teto  00000000000000010004      
+11441554        Pintura parcial de acabamento/envernizamento do pa00000000000000010002      
+11441564        Pintura/envernizamento completo do painel do teto 00000000000000042002      
+11442244        Pintura parcial/envernizamento do painel externo d00000000000000010002      
+11442954        Pintura parcial de acabamento/envernizamento do pa00000000000000010002      
+11442964        Pintura/envernizamento completo do painel externo 00000000000000010002      
+11443164        Pintura/envernizamento completo do painel lateral 00000000000000010002      
+11443544        Camada de cor/de acabamento do painel lateral exte00000000000000010002      
+11443844        Camada de cor/de acabamento da tampa traseira- ext00000000000000010002      
+11444164        Pintura/envernizamento completo da tampa traseira 00000000000000010002      
+11445544        Pintura parcial/envernizamento do para-choque tras00000000000000010002      
+11446674        Pintura de acabamento/envernizamento total da carr00000000000000157002      
+12020380        Substituição do pára-brisa                        00000000000000010002      
+12024030        Substituição do vidro da tampa traseira           00000000000000010002      
+12041150        Substituição da luz de parada da estrutura da carr00000000000000002002      
+12041490        Substituição da lanterna traseira                 00000000000000010002      
+12050290        Substituição do atuador interno do espelho retrovi00000000000000010002      
+12420671        Substituição do disco do freio dianteiro - Ambos o00000000000000011002      
+12430051        Substituição do tambor do freio traseiro - Ambos o00000000000000010002      
+12441730        Substituição do servo-freio elétrico              00000000000000010002      
+12810155        Reprogramação do conjunto do módulo de controle de00000000000000010002      
+13040190        Substituição do semi-eixo - Lado Direito          00000000000000010002      
+13040210        Substituição do semi-eixo - Lado Esquerdo         00000000000000010002      
+13420680        Substituição do interruptor de controle do rádio  00000000000000010002      
+13420840        Substituição do rádio                             00000000000000010002      
+13430990        Substituição do visor de informações ao motorista 00000000000000010002      
+14020530        Substituição do duto de admissão de ar            00000000000000010002      
+14025390        Substituição do módulo de controle do motor       00000000000000010002      
+14027900        Substituição da válvula solenoide do cânister de e00000000000000002002      
+14027910        Substituição do solenóide do canister de emissão e00000000000000010002      
+14028690        Substituição do medidor de nível de combustível   00000000000000010002      
+14032750        Substituição da bomba de água                     00000000000000016002      
+14040080        Substituição da polia do alternador               00000000000000010002      
+14040320        Substituição do alternador                        00000000000000010002      
+14041250        Substituição do motor de partida                  00000000000000010002      
+14041510        Substituição da bateria                           00000000000000003002      
+14050420        Substituição do tubo dianteiro do escapamento     00000000000000010002      
+14051110        Substituição da defletor de calor dianteira do esc00000000000000010002      
+14051980        Substituição do silencioso do escapamento com ress00000000000000010002      
+14061850        Substituição da válvula de admissão ou exaustão - 00000000000000010002      
+14063430        Substituição do vedador de óleo dianteiro da Árvor00000000000000010002      
+14065910        Substituição do cárter de óleo inferior           00000000000000010002      
+14066890        Substituição de pistão, biela e rolamento         00000000000000043002      
+14066970        Substituição do volante do motor                  00000000000000010002      
+14067090        Substituição do coxim do motor                    00000000000000004002      
+14067150        Substituição do coxim do motor - Lado Direito     00000000000000004002      
+14410870        Substituição da saída de ar do painel de instrumen00000000000000002002      
+14412470        EVAPORADOR                                        00000000000000037002      
+14415940        Substituição do tubo do evaporador do ar condicion00000000000000010002      
+14416180        Substituição da válvula de expansão térmica do eva00000000000000012002      
+14416820        Substituição da embreagem do compressor do ar cond0000000000000001000GRL    
+14417120        Substituição do compressor do ar condicionado     0000000000000001800GRL    
+14485008        SUBSTITUIÇÃO DA ESPUMA DO EVAPORADOR              00000000000000086002      
+15430460        Substituição do interruptor de ignição e partida  00000000000000010002      
+16410070        Substituição da chave com transmissor integrado   00000000000000004002      
+16440020        Substituição da fivela do cinto de segurança diant00000000000000010002      
+16440190        Substituição do retrator do cinto de segurança dia00000000000000006002      
+16440840        Substituição do retrator do cinto de segurança cen00000000000000010002      
+17021820        Substituição da capa de acabamento do reclinador e00000000000000010002      
+17440130        Substituição do volante de direção                00000000000000003002      
+17441280        Substituição da junta universal da direção        00000000000000010002      
+17441760        Substituição da coluna de direção                 00000000000000010005      
+18030090        Substituição dos parafusos das rodas              00000000000000010002      
+18430310        Substituição do cilindro mestre da embreagem      00000000000000010002      
+18430360        Substituição do cilindro atuador da embreagem     00000000000000031002      
+18430590        Substitução do platô e disco de embreagem         00000000000000027002      
+18441370        Substituição do coxim da transmissão - Lado esquer00000000000000010002      
+18441410        Substituição do coxim traseiro da transmissão     00000000000000010002      
+18441780        Substituição da transmissão                       00000000000000029002      
+18460200        Substituição do botão de pressão de liberação da a00000000000000010002      
+18464670        Substituição da transmissão                       00000000000000010002      
+18481018*       SUSBTIUIÇÃO DO FILTRO E FLUIDO DA TRANSMISSAO     00000000000000018002      
+19101158        SUBSTITUIÇÃO DA PORCA DO TANQUE COMB(IT-071G14)   00000000000000005002      
+19103388        ATEND.CONF.IT-036GC/17                            00000000000000003002      
+19103891        CAIXA DE FUS.-ADIÇÃO DE ISOLANTE NOS TERM. DE RELE00000000000000002002      
+19104171        SUBSTITUIÇÃO DO AIRBAG DO LADO DO MOTORISTA       00000000000000002002      
+19104725        AIRBAG LADO DO MOTORISTA                          00000000000000002002      
+19105063        ATUALIZAÇÃO DO MODULO DA TRANSMISSÃO              00000000000000010002      
+19105321        SUBST CIL IGNICAO IT 007GA20  ONIX E PRISMA       00000000000000007002      
+19105819        IT023G/2021                                       00000000000000003002      
+19106027        REPARO NO SUPORTE INTERNO DOS GANCHOS ISOFIX      00000000000000011002      
+19106193        inspeção dos suportes fixos dos para-sois         00000000000000001002      
+19106194        SUBSTITUIÇÃO DE 1 SUPORTE  DO PARA -SOL           00000000000000002002      
+19106272        Instalação de proteção no isolador acústico do car00000000000000024002      
+19106273        Instalação de proteção no isolador acústico do car00000000000000023006      
+1C9999          SERVICO DE FUNILARIA                              00000000000000080001      
+1CB             COMBUSTIVEL                                       000000000000000001016     
+1CIC            SOLICITACAO DO INFOCARD                           000000000000000050016     
+1D000           DESMONTAGEM PARA EXECUCAO DO SERVICO              00000000000000010001      
+1DIAG           DIAGNOSTICO                                       00000000000000005002      
+1DP             DESMONTAGEM DE PNEUS                              00000000000000007002      
+1E0203          BALANCEAMENTO RODAS                               00000000000000010002      
+1E2020          ALINHAMENTO DE DIRECAO                            00000000000000010002      
+1E2147          Subs da articul da barra estabil - Ambos          00000000000000010002      
+1E5801          AMORTECEDOR DA SUSPENSAO TRAS                     00000000000000004002      
+1E5808          AMOR DA SUSP TRAS-HOR DO EIXO-SUBS                00000000000000004002      
+1E8020          AMORTECEDOR DE DIRECAO-SUBSTITUIR                 00000000000000004002      
+1F1510          SEMI-ARVORE-DIANTEIRA-LD-SUBSTITUIR               00000000000000010002      
+1F1511          SEMI-ARVORE-DIANTEIRA-LE-SUBSTITUIR               00000000000000010002      
+1H0042          Substituição das pastilha                         00000000000000010002      
+1H0042,         PASTILHAS DE FREIO SUBSTITUIR                     00000000000000006002      
+1H0042.         SUBSTITUIR PASTILHAS DE FREIO                     00000000000000006002      
+1H0042......... PASTILHAS DE FREIO SUBSTITUIR                     00000000000000006002      
+1H0121          DISCO DE FREIO-DIANT-LE-REMOVE E R                00000000000000020002      
+1H2582.         SENSOR DE DESVIO DO VEICULO                       00000000000000005003      
+1ISOLANTE NAT   ISOLANTE PAR ATENDIMENTO A IT- 015G/18            00000000000000000103      
+1ISOLANTE NYOGELISOLANTE PARA ATENDIMENTO DA IT 015G/2018         00000000000000000103      
+1J0240          BOMBA DE VACUO E/OU JUNTA                         00000000000000006002      
+1J0800          Substituição da correia dentada                   00000000000000010002      
+1J4207          CABOS DE VELAS-TODOS-SUBSTITUIR                   00000000000000003002      
+1J5481          BOMBA D'AGUA (SB)                                 00000000000000016012      
+1J9190          TENSIONADOR AUTOM.DA CORR.MOTRIZ SB               00000000000000009012      
+1KO001          OLEO CAIXA DE MUDANCAS (SB)                       00000000000000004002      
+1LAV01          LAVAGEM                                           00000000000000010002      
+1M000           MONTAGEM CONF.ORCAMENTO ANEX                      00000000000000050001      
+1M0041          PRIMEIRA REVISAO ESPECIAL                         00000000000000019005      
+1M0042          REVISAO ESPECIAL - PRIMEIRA REVISAO               00000000000000030002      
+1M0051          SEGUNDA REVISAO                                   00000000000000014005      
+1M0061          TERCEIRA REVISAO                                  00000000000000026005      
+1M0071          QUARTA REVISAO                                    00000000000000050005      
+1M0071*         QUARTA REVSAO                                     00000000000000030002      
+1M0081          QUINTA REVISAO                                    00000000000000040005      
+1M0081*         REVISAO DE 50.000KM OU 5 ANOS.                    00000000000000023002      
+1M0091          SEXTA REVISAO                                     00000000000000018005      
+1M0101          SETIMA REVISAO                                    00000000000000023005      
+1M0111          OITAVA REVISAO                                    00000000000000034005      
+1M0121          NONA REVISAO                                      00000000000000025005      
+1M0121E         NONA REVISÃO ELETRICA                             00000000000000010003      
+1M0131          DECIMA REVISAO                                    00000000000000030005      
+1M1011          OITAVA REVISAO                                    00000000000000045012      
+1MEC            MECANICA                                          00000000000000030002      
+1MEC 1          MECANICA (FUNILARIA)                              00000000000000010001      
+1ML             MARGEM DE LUCRATIVIDADE 28%                       00000000000000005002      
+1MP             MATERIAL DE PINTURA                               00000000000000003004      
+1N5215          SENSOR DE TEMPERATURA EXTERNA-SUBSTITUIR          00000000000000003002      
+1OXI10          OXISANITIZAÇÃO PROMOCIONAL                        00000000000000002002      
+1P8888          SERVICO DE PINTURA                                00000000000000080004      
+1REV1           REQUISIÇÃO DE PEÇAS NA 1 REVISAO                  00000000000000010002      
+1SER09          HIGIENIZ DO SIST DE  A/C                          00000000000000006002      
+1SER10          OXISANITIZAÇÃO                                    00000000000000006002      
+1ST             SERVICO DE TERCEIROS                              00000000000000010002      
+1STF            SERVIÇO TERCEIRO FUN                              00000000000000005001      
+1STFS           SERVIÇO DE TERCEIRO FUNILARIA SEMINOVOS           000000000000000050016     
+1TR001          PRIMEIRA TROCA DE OLEO                            000000000000000020012     
+1TR003          SEGUNDA TROCA DE OLEO                             000000000000000020012     
+1TR005          TERCEIRA TROCA DE OLEO                            000000000000000020012     
+1TR006          TROCA DE OLEO                                     000000000000000020012     
+1TR009          QUINTA TROCA DE OLEO                              000000000000000020012     
+1TR011          SEXTA TROCA DE OLEO                               00000000000000002002      
+1TR013           SETIMA  TROCA DE OLEO                            000000000000000020012     
+1TR015          OITAVA TROCA DE OLEO                              000000000000000020012     
+1TR017          NONA TROCA DE OLEO                                000000000000000020012     
+1TR019          DECIMA TROCA DE OLEO                              000000000000000020012     

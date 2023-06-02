@@ -1,0 +1,18 @@
+128             REPASSE FILIAL                                    1
+129             TRÂNSITO                                          1
+135             DEMONSTRAÇÃO                                      1
+136             TRANS. SEMI-NOVOS                                 1
+137             ESPACIAL                                          1
+138             REVISÃO                                           0
+139             OFICINA                                           0
+140             REPASSE                                           1
+143             EMPRESTADO                                        0
+142             IMP.JUD.                                          0
+144             NATAL                                             1
+145             NATAL CAP                                         1
+146             PEÇAS - ESPACIAL                                  0
+147             PATIO EXTERNO                                     0
+148             FEIRAO                                            1
+149             DAO SILVEIRA CG                                   1
+150             NATAL FILIAL                                      1
+151             DAO SILVEIRA PATOS                                1

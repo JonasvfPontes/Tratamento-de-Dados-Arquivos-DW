@@ -1,0 +1,26 @@
+116             FL-Cliente Agendado - Retorno                     1
+11              Indefinido                                        1
+12              Pendente                                          1
+13              Encaminhou                                        1
+14              Suspenso                                          1
+16              Esperando retorno                                 1
+17              Esperando Aprovacao                               1
+18              Esperando def. do Cliente                         1
+1100            TMK-Agendou Cliente                               1
+1101            TMK-Excluiu Agenda                                1
+1102            TEC-Cliente não localizado                        1
+1104            TEC-Cliente Adiou Agenda                          1
+1105            TEC-Agendou Cliente                               1
+1106            TEC-Excluiu Agenda                                1
+1107            TEC-Encerrou CHIP                                 1
+1108            TEC-Abriu OS                                      1
+1109            TEC-Abriu Orçamento                               1
+1123            TEC-Cliente Desistiu Agenda                       1
+1130            Aguardando Retorno                                1
+19              FL-Em Negociação - Sem agenda                     1
+110             FL-Aguardando Agendamento                         1
+111             FL-Marketing fazendo Contato                      1
+112             FL-Cliente Desistiu-Encerrado pelo MKT            1
+113             FL-Cliente Desistiu-Encerrar                      1
+114             FL-Aguardando Agendamento                         1
+115             FL-Venda aprovada-Faturamento                     1

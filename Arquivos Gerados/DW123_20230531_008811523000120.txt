@@ -1,0 +1,88 @@
+103             REQUISICAO DE PECAS (MECANICA)                    00000000000000005002      
+10610653        REVISAO DE ENTREGA                                00000000000000006002      
+11              REQUISICAO                                        00000000000000000104      
+11.11           REQUISIÇÃO                                        00000000000000000102      
+11044710        Substituição da alça de assistência da coluna A   00000000000000010002      
+111             LIMPEZA ARCONDICIONADO                            00000000000000010003      
+11411230        Substituição da porta lateral dianteira           00000000000000010002      
+11416650        Substituição da guarnição da porta lateral diantei00000000000000010002      
+11416740        Substituição da guarnição de vedação da porta late00000000000000010002      
+11441564        Pintura/envernizamento completo do painel do teto 00000000000000042002      
+11442264        Pintura/envernizamento completo do painel externo 00000000000000010002      
+12041650        Substituição da lanterna de freio elevada         00000000000000010002      
+13420840        Substituição do rádio                             00000000000000010002      
+13430990        Substituição do visor de informações ao motorista 00000000000000010002      
+14022020        Substituição do módulo de controle de potência da 00000000000000010002      
+14023260        Substituição da válvula solenóide da passagem do t00000000000000010002      
+14029250        Substituição do tanque de combustível             00000000000000010002      
+14032680        Substituição da saída de água                     00000000000000010002      
+14041510        Substituição da bateria                           00000000000000003002      
+14064390        Substituição da roda dentada da Árvore de Manivela00000000000000010002      
+14412470        EVAPORADOR                                        00000000000000037002      
+14416820        Substituição da embreagem do compressor do ar cond0000000000000001000GRL    
+14417120        Substituição do compressor do ar condicionado     0000000000000001800GRL    
+14485008        SUBSTITUIÇÃO DA ESPUMA DO EVAPORADOR              00000000000000086002      
+16410070        Substituição da chave com transmissor integrado   00000000000000004002      
+16440020        Substituição da fivela do cinto de segurança diant00000000000000010002      
+16440870        Substituição da fivela central do cinto lateral do00000000000000010002      
+17020700        Substituição da manopla do reclinador do encosto d00000000000000010002      
+17021820        Substituição da capa de acabamento do reclinador e00000000000000010002      
+17440130        Substituição do volante de direção                00000000000000003002      
+18050190        Substituição do sensor do indicador de pressão dos00000000000000005002      
+18469959        Transmissão automática - Reclamação do cliente não00000000000000010002      
+19101760        ADIÇÃO DA BRAÇADEIRA E DO SUPORTE PARA O ESCAPAMEN00000000000000004002      
+19101881        ATEND CONF  IT 047G/15                            00000000000000005002      
+19103891        CAIXA DE FUS.-ADIÇÃO DE ISOLANTE NOS TERM. DE RELE00000000000000002002      
+19104151        INSPEÇÃO DOS PARAFUSOS DO CUBO DAS RODAS CONFORME 00000000000000003002      
+19104309        TERMINAL DE DIREÇÃO - LUBRIFICAÇÃO.               00000000000000004002      
+19104676        INSP COM DISPOSITIVO - OK AMBOS LADOS             00000000000000002002      
+19104725        AIRBAG LADO DO MOTORISTA                          00000000000000002002      
+19106193        inspeção dos suportes fixos dos para-sois         00000000000000001002      
+1AAA07          SETIMA  REVISÃO DE 70.000 KM OU 07 ANOS           00000000000000000102      
+1AAA09          NONA  REVISÃO DE 90.000 KM OU 09 ANOS             00000000000000030002      
+1CG001          CARGA DE GÁS                                      0000000000000001000GRL    
+1DIAG           DIAGNOSTICO                                       00000000000000005002      
+1DS-AL001       ALINHAMENTO DE DIRECAO                            00000000000000010012      
+1DS-BL001       BALANCEAMENTO DE RODAS                            00000000000000010012      
+1E0203          BALANCEAMENTO RODAS                               00000000000000010002      
+1E2020          ALINHAMENTO DE DIRECAO                            00000000000000010002      
+1FUN            SERVICO DE FUNILARIA                              00000000000000010001      
+1H0042          Substituição das pastilha                         00000000000000010002      
+1H0042....      PASTILHAS DE FREIO SUBSTITUIR                     00000000000000006002      
+1H0042.......   PASTILHAS DE FREIO SUBSTITUIR                     00000000000000006002      
+1H0042......... PASTILHAS DE FREIO SUBSTITUIR                     00000000000000006002      
+1ISOLANTE NAT   ISOLANTE PAR ATENDIMENTO A IT- 015G/18            00000000000000000103      
+1ISOLANTE NYOGELISOLANTE PARA ATENDIMENTO DA IT 015G/2018         00000000000000000103      
+1J0675          CORREIA MOTRIZ ( SB)                              00000000000000020002      
+1LUBRIFICAÇÃO   LUBRIFICACAO IT 006/19                            00000000000000010002      
+1M0041          PRIMEIRA REVISAO ESPECIAL                         00000000000000019005      
+1M0051          SEGUNDA REVISAO                                   00000000000000014005      
+1M0061          TERCEIRA REVISAO                                  00000000000000026005      
+1M0071          QUARTA REVISAO                                    00000000000000050005      
+1M0081          QUINTA REVISAO                                    00000000000000040005      
+1M0091          SEXTA REVISAO                                     00000000000000018005      
+1M0101          SETIMA REVISAO                                    00000000000000023005      
+1M0111          OITAVA REVISAO                                    00000000000000034005      
+1M0121          NONA REVISAO                                      00000000000000025005      
+1M0131          DECIMA REVISAO                                    00000000000000030005      
+1M0141          DECIMA PRIMEIRA REVISAO                           00000000000000030005      
+1M0181          DECIMA QUINTA REVISAO                             00000000000000030002      
+1M1011          OITAVA REVISAO                                    00000000000000045012      
+1MEC            MECANICA                                          00000000000000030002      
+1ML             MARGEM DE LUCRATIVIDADE 28%                       00000000000000005002      
+1MP             MATERIAL DE PINTURA                               00000000000000003004      
+1PIN            SERVICO DE PINTURA                                00000000000000010001      
+1REQ            REQUISICAO DE PECAS (FUNILARIA)                   00000000000000010001      
+1ST             SERVICO DE TERCEIROS                              00000000000000010002      
+1STF            SERVIÇO TERCEIRO FUN                              00000000000000005001      
+1TAP            SERVICO DE TAPECARIA                              00000000000000010001      
+1TR001          PRIMEIRA TROCA DE OLEO                            000000000000000020012     
+1TR003          SEGUNDA TROCA DE OLEO                             000000000000000020012     
+1TR005          TERCEIRA TROCA DE OLEO                            000000000000000020012     
+1TR006          TROCA DE OLEO                                     000000000000000020012     
+1TR007          QUARTA TROCA DE OLEO                              000000000000000020012     
+1TR009          QUINTA TROCA DE OLEO                              000000000000000020012     
+1TR011          SEXTA TROCA DE OLEO                               00000000000000002002      
+1TR013           SETIMA  TROCA DE OLEO                            000000000000000020012     
+1TR015          OITAVA TROCA DE OLEO                              000000000000000020012     
+1TR019          DECIMA TROCA DE OLEO                              000000000000000020012     

@@ -1,0 +1,8 @@
+112     ST OLEO                                           1
+116     TERCEIRIZADO                                      1
+12      MECÂNICA                                          1
+13      ELÉTRICA                                          1
+15      REVISÃO                                           1
+18      POSTO DE LAVAGEM                                  1
+19      EQUIPSERVICE                                      1
+1GRL    SETOR GERAL                                       1

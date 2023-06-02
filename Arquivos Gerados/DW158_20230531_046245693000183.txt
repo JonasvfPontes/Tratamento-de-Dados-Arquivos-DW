@@ -1,0 +1,70 @@
+11437           A VISTA                                           0
+11434           A VISTA                                           0
+11425           A VISTA                                           0
+11436           A VISTA                                           0
+12784           ACESSORIOS                                        0
+12744           ACESSORIOS - VD                                   0
+12751           ACESSORIOS - VD                                   0
+12748           ACESSORIOS - VD                                   1
+11439           ADIANTAMENTO                                      0
+12762           AMIGO CHEVROLET                                   0
+12701           BANCO HSBC-BOLETO                                 1
+12702           BANCO HSBC-BOLETO                                 1
+11435           BOLETO BCO PARCELAS IGUAIS                        0
+11444           BOLETO BCO PARCELAS IGUAIS                        0
+11401           BOLETO CLIENTE (INTERNET)                         0
+12719           BOLETO MANUAL (DAO)                               0
+12728           BOLETO MANUAL (DAO)                               0
+12737           BOLETO MANUAL (DAO)                               0
+11400           BOLETO NAVEL (INTERNET)                           0
+12770           BOLETO SAFRA                                      0
+12768           BOLETO SAFRA                                      0
+12734           BOLETO SANTANDER                                  0
+12731           BOLETO SANTANDER                                  0
+12738           BOLETO SANTANDER                                  1
+11408           BOLETO SINAL (INTERNET)                           0
+12712           BOLETO VEICULOS HSBC                              1
+11406           BONUS GM CARD                                     0
+12761           BONUS GM CARD                                     0
+11427           CARTAO DE CREDITO                                 0
+11414           CARTAO DE CREDITO                                 0
+11447           CARTAO DE CREDITO                                 0
+11446           CARTAO DE CREDITO                                 0
+12714           CARTAO DE DEBITO                                  0
+12713           CARTAO DE DEBITO                                  0
+11449           CHEQUE                                            0
+11426           CHEQUE                                            0
+11445           CHEQUE PRE-DATADO                                 0
+11405           CHEVROLET CARD                                    0
+12705           CONSORCIO                                         0
+11407           CONSÓRCIO                                         0
+12707           CONTRA APRESENTACAO                               0
+12716           CONTRA APRESENTACAO                               0
+11428           CONTRA-APRESENTACAO                               0
+12771           CORTESIA                                          0
+11402           CORTESIA                                          0
+11404           CREDITO BANCARIO                                  0
+12767           CRÉDITO FUTURO                                    0
+11419           DEPOSITO                                          0
+12810           DEPOSITO                                          0
+11441           DEPOSITO BANCARIO                                 1
+11413           DUPLICATA MONTADAS                                0
+12741           DUPLICATA VENDA DIRETA                            0
+11429           DUPLICATAS DE VEICULOS                            0
+11430           FINANCIAMENTO                                     0
+11412           FINANCIAMENTO TERCEIROS                           0
+11424           GARANTIA                                          0
+11432           GARANTIA                                          0
+12736           GM AUTOGIRO 60 DIAS                               0
+12805           GOOD CARD 60 DIAS                                 0
+11409           ORGAO PUBLICO                                     0
+12706           OUTROS CREDITOS                                   0
+11403           OUTROS CREDITOS                                   0
+11443           PARCELA MONTADAS                                  0
+11420           PARCELAS MONTADAS                                 0
+11416           SEGURO  30 DIAS                                   0
+11417           SEGURO 60 DIAS                                    0
+12704           VEICULO USADO                                     0
+11448           VEICULO USADOS 1                                  0
+12700           VEICULO USADOS 2                                  1
+11418           VENDA ENTRE GRUPO                                 0

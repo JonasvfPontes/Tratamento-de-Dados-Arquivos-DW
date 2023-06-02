@@ -1,0 +1,11 @@
+11    CHEVROLET                                                                                           CHEVROLET                                         1
+116   HONDA                                                                                                                                                 1
+117   TOYOTA                                                                                                                                                1
+11900 HYUNDAI                                                                                             HYUNDAI                                           1
+12    OUTROS                                                                                              OUTROS                                            1
+1213  RENAULT                                                                                             RENAULT                                           1
+1214  PEGEOUT                                                                                             PEGEOUT                                           1
+12200 NISSAN                                                                                              NISSAN                                            1
+13    FORD                                                                                                FORD                                              1
+15    VOLKSWAGEN                                                                                          VOLKSWAGEN                                        1
+16    FIAT                                                                                                FIAT                                              1

@@ -1,0 +1,8 @@
+10000001966CRÉDITO FUTURO                                    Outros                                            0
+10000002003VEICULOS USADOS 2                                 Veiculos Usados                                   0
+10000000666A VISTA                                           A Vista                                           0
+10000000673CONSORCIO                                         Consorcios                                        0
+10000000676CREDITO BANCARIO                                  Outros                                            0
+10000000677FINANCIAMENTO                                     Financiamento - Controle Externo                  0
+10000000680VEICULO USADOS                                    Veiculos Usados                                   0
+10000000688FINANCIAMENTO TERCEIROS                           Outros                                            0
