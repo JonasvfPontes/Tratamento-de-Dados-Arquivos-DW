@@ -60,16 +60,22 @@ def fVerificarOpcao(opc):
         fAbrirConfig()
 
 def fAbrirConfig():
-    print('''
-    Escolha uma opção:
-    1 - Adicionar/Remover arquivos que devo ignorar os TABs
-    2 - Adicionar/Remover arquivos que devo ignorar''')
     while True:
+        print('''
+    Escolha uma opção:
+    1 - Adicionar/Remover arquivos que devo ignorar TABs
+    2 - Adicionar/Remover arquivos que devo ignorar
+    3 - Sair e executar programa''')
+    
         opc = input()
         if opc == '1':
             config.fIgnorarTabs()
         elif opc =='2':
             config.fIgnorar()
+        elif opc == '3':
+            print('Saindo...')
+            sleep(1)
+            break
         else:
             print('Opção inválida')
 
