@@ -6,8 +6,13 @@ import config
 #Função de tratamento-------------------------------
 def fTratamento(caminhoArquivo, comprimentoLinha: int, df: pd.DataFrame, NomedoArquivoSaida): #devo passar como paramretro uma string com o caminho do arquivo e comprimento ideal da linha
     logErro = {'numLinha':[],'Qtde':[],'Tipo':[]}
+    
+    #carrega a lista de arquivos que deve ignotar os TABs
+    dfIgnorarTabs = pd.read_csv(r'scripts\\ignorarTabs.csv')
+
     with open(caminhoArquivo, 'r') as dw:
         arquivo = dw.readlines()
+
     tamIdeal = comprimentoLinha
 
     verificador = 0
@@ -15,13 +20,23 @@ def fTratamento(caminhoArquivo, comprimentoLinha: int, df: pd.DataFrame, NomedoA
     cont = 0
     for linha in arquivo:
         cont += 1
-        if linha.count('\t') > 0: #Verificar se tem TAB na linha
-            #Adicionando informações ao log de erros encontrados
-            logErro['numLinha'].append(str(f'{cont:<8}'))
-            qtdeTAB = linha.count('\t')
-            logErro['Qtde'].append(str(f'{qtdeTAB:<4}'))
-            logErro['Tipo'].append('TAB')
-            linha = linha.replace('\t', ' ') #removendo todos os tabs da linha atual
+
+        #Confere se o arquivo está na lista de Ignotar TABs
+        localizar = str(caminhoArquivo).find('_')
+        if localizar > -1:
+            arquivoAtual = caminhoArquivo[:localizar]
+            arquivoAtual = arquivoAtual[-5:]
+            # Confere se o arquivo atual não está contido dentro dos valores
+            #do dfIgnorarTabs
+            if not arquivoAtual in dfIgnorarTabs.values:
+                if linha.count('\t') > 0: #Verificar se tem TAB na linha
+                    #Adicionando informações ao log de erros encontrados
+                    logErro['numLinha'].append(str(f'{cont:<8}'))
+                    qtdeTAB = linha.count('\t')
+                    logErro['Qtde'].append(str(f'{qtdeTAB:<4}'))
+                    logErro['Tipo'].append('TAB')
+                    linha = linha.replace('\t', ' ') #removendo todos os tabs da linha atual
+
         if len(linha) < tamIdeal:
             if verificador==0: #Se = 0, primeira linha com problema
                 #Adicionando informações ao log de erros encontrados
@@ -58,6 +73,10 @@ def fVerificarOpcao(opc):
         exit()
     elif opc == 'C':
         fAbrirConfig()
+        return False
+    else:
+        return True
+
 
 def fAbrirConfig():
     while True:
@@ -81,7 +100,6 @@ def fAbrirConfig():
 
 
 
-
 #------------Programa principal----------------------
 dfDados = pd.DataFrame(columns=['linhas'])
 
@@ -98,25 +116,42 @@ comprimentoIdeal = {
     'DW164':68, 'DW165':68, 'DW166':68, 'DW167':68, 'DW168':83, 'DW201':218, 'DW202':292, 'DW203': 603, 'DW204': 145, 'DW205': 269, 'DW206':286, 'DW207':914, 
     'DW208':811, 'DW209':387, 'DW210':253, 'DW211':147, 'DW220':1027, 'DW221':1405, 'DW222':0, 'DW223':848
 }
+
 print('\n')
 print('='*50 + '\nDigite "S" a qualquer momento para sair ou "C" para abrir as configurações\n' + '='*50 + '\n')
 
-#Verificando configurações do usuário
-dataExportacao = input('Digite a data de exportação do arquivo DW [Ex 20230510]: ').strip().upper()
-fVerificarOpcao(dataExportacao)
-nomeArquivoInicio = input('Digite o nome do primeiro arquivo que quer tratar [Ex: DW110]: ').upper()
-fVerificarOpcao(nomeArquivoInicio)
-nomeArquivoFim = input('Digite o nome do último arquivo que quer tratar [Ex: DW114]: ').upper()
-fVerificarOpcao(nomeArquivoFim)
-opc = input('''Qual CC quer tratar?
-1 - E20
-2 - N53
-3 - S46
-4 - T08
-5 - Todos
-''').upper()
-fVerificarOpcao(opc)
+#Verificando opções do usuário
+verificador1 = False
+verificador2 = False
+verificador3 = False
+verificador4 = False
+while True:
+    if not verificador1:
+        dataExportacao = input('Digite a data de exportação do arquivo DW [Ex 20230510]: ').strip().upper()
+        verificador1 = fVerificarOpcao(dataExportacao)
+        if verificador1 and verificador2 and verificador3 and verificador4:
+            break
+    
+    if not verificador2:
+        nomeArquivoInicio = input('Digite o nome do primeiro arquivo que quer tratar [Ex: DW110]: ').upper()
+        verificador2 = fVerificarOpcao(nomeArquivoInicio)
+        if verificador1 and verificador2 and verificador3 and verificador4:
+            break
+
+    if not verificador3:
+        nomeArquivoFim = input('Digite o nome do último arquivo que quer tratar [Ex: DW114]: ').upper()
+        verificador3 = fVerificarOpcao(nomeArquivoFim)
+        if verificador1 and verificador2 and verificador3 and verificador4:
+            break
+
+    if not verificador4:
+        opc = input('Qual CC quer tratar?\n1 - E20\n2 - N53\n3 - S46\n4 - T08\n5 - Todos\n').upper()
+        verificador4 = fVerificarOpcao(opc)
+        if verificador1 and verificador2 and verificador3 and verificador4:
+            break
+
 print('='*50)
+print('Aguarde estou trabalhando...')
 
 
 #Loop para tratamento de cada arquivo
@@ -130,9 +165,10 @@ else:
     ordem =1
 
 
-if int(opc) > len(cnpjs):
+if int(opc) > len(cnpjs): #Verifica a opção das CCs escolhidas pelo usuário
   for cnpj in cnpjs:
         for i in range(numInicio, numFim + ordem, ordem) :
+            #Cria o caminho do arquivo para ser aplicado a função de tratamento
             pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpj + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
             if os.path.isfile(pathArquivo): #Verificando se o arquivo existe
                 fTratamento(pathArquivo, comprimentoIdeal['DW' + str(i)], dfDados, 'DW' + str(i) + '-' + nomeCC[cnpjs.index(cnpj) ])

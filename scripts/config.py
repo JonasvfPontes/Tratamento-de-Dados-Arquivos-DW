@@ -12,6 +12,7 @@ def fIgnorarTabs():
         ''')
         if opc.upper() == "VOLTAR":
             break
+
         if opc =='1':
             print(dfLista)
         
@@ -49,13 +50,13 @@ def fIgnorarTabs():
                 else:
                     print('Não entendi esse valor, tente novamente')
 
-        
         elif opc == '4':
             break
 
 
 def fIgnorar():
-    path = input('Digite o novo caminho de busca\n')
+    print('Entrou na função')
 
-fIgnorarTabs()
+
+#fIgnorarTabs()
         
