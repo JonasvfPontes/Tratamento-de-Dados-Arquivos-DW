@@ -58,6 +58,7 @@ def fTratamento(caminhoArquivo, comprimentoLinha: int, df: pd.DataFrame, NomedoA
             verificador = 0
             dfNovaLinha = pd.DataFrame({'linhas': [str(linha).replace('\n', '') ]})
             df = pd.concat([df, dfNovaLinha], ignore_index=True)
+    
     #Exportando df tratado
     df.to_csv('DW csv\\' + NomedoArquivoSaida + '.csv', sep='\t', index=False, header=False)
     
@@ -103,9 +104,9 @@ def fAbrirConfig():
 #------------Programa principal----------------------
 dfDados = pd.DataFrame(columns=['linhas'])
 
-#Dicionário para guardar o CNPJ das CC
+#Listas para guardar o CNPJ das CC
 cnpjs = ['009114091000160', '008029092000144', '008811523000120', '046245693000183']
-nomeCC = ['E20', 'N53', 'S46', 'T08'] #Esse dicionário deve seguir a mesma ordem do dicinoário cnpjs
+nomeCC = ['E20', 'N53', 'S46', 'T08'] #Esse dicionário deve seguir a mesma ordem da lista cnpjs
 
 #Dicionário com o nome e conprimento padrão das linhas
 comprimentoIdeal = {
@@ -150,8 +151,8 @@ while True:
         if verificador1 and verificador2 and verificador3 and verificador4:
             break
 
-print('='*50)
-print('Aguarde estou trabalhando...')
+print('\n' + '='*50)
+print('Aguarde, estou trabalhando nos arquivos .txt')
 
 
 #Loop para tratamento de cada arquivo
@@ -166,8 +167,8 @@ else:
 
 
 if int(opc) > len(cnpjs): #Verifica a opção das CCs escolhidas pelo usuário
-  for cnpj in cnpjs:
-        for i in range(numInicio, numFim + ordem, ordem) :
+    for i in range(numInicio, numFim + ordem, ordem):
+        for cnpj in cnpjs:
             #Cria o caminho do arquivo para ser aplicado a função de tratamento
             pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpj + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
             if os.path.isfile(pathArquivo): #Verificando se o arquivo existe
@@ -177,5 +178,40 @@ else:
             pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpjs[int(opc)-1] + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
             if os.path.isfile(pathArquivo):
                 fTratamento(pathArquivo, comprimentoIdeal['DW' + str(i)], dfDados, 'DW' + str(i) + '-' + nomeCC[int(opc)-1])
-print('Sucesso!')
-sleep(2)
+
+#Juntar arquivos por layout para eu poder usar esse único arquivo
+#como padrão quando carregar no banco de dados
+print('Unificando arquivos por layout...')
+sleep(1)
+
+'''
+Padrão de saída dos arquivos
+DW101-E20.csv
+DW101-N53.csv
+'''
+#Percorre cada arquivos dentro da pasta DW csv e junta 
+#se for o mesmo layout DW csv\DW101-E20.csv
+
+dfs = []  # Lista para armazenar os DataFrames
+for elemento in comprimentoIdeal.keys():
+    dfConsolidado = pd.DataFrame()
+    for cc in nomeCC:
+        arquivoDw = 'DW csv\\' + elemento + '-' + cc + '.csv'
+        if os.path.isfile(arquivoDw):
+            try:
+                dfAtual = pd.read_csv(arquivoDw,sep='\t', encoding='utf-8', header=None)
+                dfs.append(dfAtual)  # Adiciona o DataFrame à lista
+
+                '''
+                #Verificar se dfConsolidado == vazio
+                if dfConsolidado.empty:
+                    dfConsolidado = dfAtual
+                else:
+                    dfConsolidado = pd.concat([dfConsolidado, dfAtual], ignore_index=True)'''
+            except pd.errors.EmptyDataError:
+                dfAtual = pd.DataFrame()
+
+    if len(dfs) > 0:
+        dfConsolidado = pd.concat(dfs)  # Concatena os DataFrames da lista
+        dfConsolidado.to_csv('DW csv\\' + elemento + '.csv', index=False, header=False)
+        
