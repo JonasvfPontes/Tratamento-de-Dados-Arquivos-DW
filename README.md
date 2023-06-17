@@ -10,3 +10,6 @@ Esse script irá percorrer cada linha e verificar se há quebras, isso será pos
 o comprimento ideal de cada linha, e também irá verificar se há TABs, sendo assim irá tratar cada linha removendo 
 as quebras e removendo os TABs, ao final irá gerar logs de erro detalhando o nome do arquivo, o número da linha e qual tipo de problema
 há naquela linha para que eu possa enviar esses logs para o CPD e eles possam corrigir via banco de dados
+
+Foi adicionado a opção de ignotar os TABs do arquivo que o usuário preferir pois alguns dados são
+de campos de observações de usuário e não se considera erro conter TABs nesses DWs
