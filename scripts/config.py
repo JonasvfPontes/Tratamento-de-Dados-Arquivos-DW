@@ -1,7 +1,14 @@
 import pandas as pd
+import os
 
 def fIgnorarTabs():
-    dfLista = pd.read_csv(r'scripts\\ignorarTabs.csv')   
+    #Carregar lista
+    #verificar se a lista existe, senão, criar
+    if os.path.isfile('scripts\\ignorarTabs.csv'):
+        dfLista = pd.read_csv(r'scripts\\ignorarTabs.csv')
+    else:
+        dfLista = pd.DataFrame({'Arquivos':[]})
+
     while True:
         opc = input('''
         O que deseja fazer agora?
@@ -41,7 +48,9 @@ def fIgnorarTabs():
             while True:
                 i = input('Digite o número da linha que deseja excluir: ')
                 if i.upper() == 'FIM':
-                    
+                    if not os.path.exists('scripts'): #Confere se pasta já existe
+                        os.makedirs('scripts') #Cria a pasta caso não exista
+
                     dfLista.to_csv(r'scripts\\ignorarTabs.csv', index=False)
                     break
                 elif i.isnumeric():
@@ -57,6 +66,4 @@ def fIgnorarTabs():
 def fIgnorar():
     print('Entrou na função')
 
-
-#fIgnorarTabs()
         

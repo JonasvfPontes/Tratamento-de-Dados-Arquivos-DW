@@ -200,6 +200,7 @@ for elemento in comprimentoIdeal.keys():
         if os.path.isfile(arquivoDw):
             try:
                 dfAtual = pd.read_csv(arquivoDw,sep='\t', encoding='utf-8', header=None)
+                dfAtual['CC'] = cc #Adiciona a CC de origem aos dados
                 dfs.append(dfAtual)  # Adiciona o DataFrame à lista
 
                 '''
@@ -213,5 +214,5 @@ for elemento in comprimentoIdeal.keys():
 
     if len(dfs) > 0:
         dfConsolidado = pd.concat(dfs)  # Concatena os DataFrames da lista
-        dfConsolidado.to_csv('DW csv\\' + elemento + '.csv', index=False, header=False)
+        dfConsolidado.to_csv('DW csv\\' + elemento + '.csv',sep='\t', index=False, header=False)
         
