@@ -192,9 +192,10 @@ DW101-N53.csv
 #Percorre cada arquivos dentro da pasta DW csv e junta 
 #se for o mesmo layout DW csv\DW101-E20.csv
 
-dfs = []  # Lista para armazenar os DataFrames
+#dfs = []  # Lista para armazenar os DataFrames
 for elemento in comprimentoIdeal.keys():
     dfConsolidado = pd.DataFrame()
+    dfs = []  # Cria/Esvazia lista para armazenar os DataFrames
     for cc in nomeCC:
         arquivoDw = 'DW csv\\' + elemento + '-' + cc + '.csv'
         if os.path.isfile(arquivoDw):
@@ -203,16 +204,14 @@ for elemento in comprimentoIdeal.keys():
                 dfAtual['CC'] = cc #Adiciona a CC de origem aos dados
                 dfs.append(dfAtual)  # Adiciona o DataFrame à lista
 
-                '''
-                #Verificar se dfConsolidado == vazio
-                if dfConsolidado.empty:
-                    dfConsolidado = dfAtual
-                else:
-                    dfConsolidado = pd.concat([dfConsolidado, dfAtual], ignore_index=True)'''
             except pd.errors.EmptyDataError:
-                dfAtual = pd.DataFrame()
+                print('Arquivo ' + arquivoDw + ' vazio')
+            dfAtual = pd.DataFrame()
 
     if len(dfs) > 0:
         dfConsolidado = pd.concat(dfs)  # Concatena os DataFrames da lista
         dfConsolidado.to_csv('DW csv\\' + elemento + '.csv',sep='\t', index=False, header=False)
-        
+
+print('Sucesso!')
+print('Saindo...')
+sleep(2)
