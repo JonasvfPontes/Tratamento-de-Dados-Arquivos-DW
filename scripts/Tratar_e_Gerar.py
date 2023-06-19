@@ -21,7 +21,9 @@ def fTratamento(caminhoArquivo, comprimentoLinha: int, df: pd.DataFrame, NomedoA
     for linha in arquivo:
         cont += 1
 
-        #Confere se o arquivo está na lista de Ignotar TABs
+        linha = linha.replace('"',' ') #Remove aspas de cada linha
+        
+        #Confere se o arquivo está na lista IgnotarTABs
         localizar = str(caminhoArquivo).find('_')
         if localizar > -1:
             arquivoAtual = caminhoArquivo[:localizar]
