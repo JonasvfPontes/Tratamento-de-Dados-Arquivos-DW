@@ -8,7 +8,8 @@ def fTratamento(caminhoArquivo, comprimentoLinha: int, df: pd.DataFrame, NomedoA
     logErro = {'numLinha':[],'Qtde':[],'Tipo':[]}
     
     #carrega a lista de arquivos que deve ignotar os TABs
-    dfIgnorarTabs = pd.read_csv(r'scripts\\ignorarTabs.csv')
+    if os.path.isfile('scripts\\ignorarTabs.csv'):
+        dfIgnorarTabs = pd.read_csv(r'scripts\\ignorarTabs.csv')
 
     with open(caminhoArquivo, 'r') as dw:
         arquivo = dw.readlines()
@@ -82,6 +83,7 @@ def fVerificarOpcao(opc):
 
 
 def fAbrirConfig():
+    global dfIgnorarDW
     while True:
         print('''
     Escolha uma opção:
@@ -93,7 +95,7 @@ def fAbrirConfig():
         if opc == '1':
             config.fIgnorarTabs()
         elif opc =='2':
-            config.fIgnorar()
+           dfIgnorarDW = config.fIgnorar()
         elif opc == '3':
             print('Saindo...')
             sleep(1)
@@ -104,6 +106,12 @@ def fAbrirConfig():
 
 
 #------------Programa principal----------------------
+#Carregar lista de DW que devem ser ignorador
+if os.path.isfile('scripts\\ignorarDW.csv'):
+        dfIgnorarDW = pd.read_csv(r'scripts\\ignorarDW.csv')
+else:
+    dfIgnorarDW = pd.DataFrame({'Arquivos':[]})
+
 dfDados = pd.DataFrame(columns=['linhas'])
 
 #Listas para guardar o CNPJ das CC
@@ -167,16 +175,22 @@ if numFim < numInicio: #a ordem é o que diz se o for vai trabalhar com acrescim
 else:
     ordem =1
 
+#Iniciar loop para cada elemento dentro dos padrões que o usuário optou
 
 if int(opc) > len(cnpjs): #Verifica a opção das CCs escolhidas pelo usuário
     for i in range(numInicio, numFim + ordem, ordem):
-        for cnpj in cnpjs:
-            #Cria o caminho do arquivo para ser aplicado a função de tratamento
-            pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpj + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
-            if os.path.isfile(pathArquivo): #Verificando se o arquivo existe
-                fTratamento(pathArquivo, comprimentoIdeal['DW' + str(i)], dfDados, 'DW' + str(i) + '-' + nomeCC[cnpjs.index(cnpj) ])
+        #Verificar se DW está na lista de ignotarDW
+        dwAtual = 'DW' + str(i)
+        if not dwAtual in dfIgnorarDW.values:
+            for cnpj in cnpjs:
+                #Cria o caminho do arquivo para ser aplicado a função de tratamento
+                pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpj + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
+                if os.path.isfile(pathArquivo): #Verificando se o arquivo existe
+                    fTratamento(pathArquivo, comprimentoIdeal['DW' + str(i)], dfDados, 'DW' + str(i) + '-' + nomeCC[cnpjs.index(cnpj) ])
 else:
     for i in range(numInicio, numFim + ordem, ordem) :
+        #Verificar se DW está na lista de ignotarDW
+        if not i in dfIgnorarDW.values:
             pathArquivo = str('Arquivos Gerados\DW' + str(i) + '_' + dataExportacao + '_' + cnpjs[int(opc)-1] + '.txt') #Nome dos arquivos DWs padrão → DW110_20230511_009114091000160
             if os.path.isfile(pathArquivo):
                 fTratamento(pathArquivo, comprimentoIdeal['DW' + str(i)], dfDados, 'DW' + str(i) + '-' + nomeCC[int(opc)-1])
@@ -192,9 +206,7 @@ DW101-E20.csv
 DW101-N53.csv
 '''
 #Percorre cada arquivos dentro da pasta DW csv e junta 
-#se for o mesmo layout DW csv\DW101-E20.csv
-
-#dfs = []  # Lista para armazenar os DataFrames
+#se for o mesmo layout
 for elemento in comprimentoIdeal.keys():
     dfConsolidado = pd.DataFrame()
     dfs = []  # Cria/Esvazia lista para armazenar os DataFrames
